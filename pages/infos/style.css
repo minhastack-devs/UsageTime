@@ -1,0 +1,18 @@
+.infos-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+}
+
+.infos-item {
+   background: var(--primary-color);
+   color: var(--light-text-color);
+   line-height: 25px;
+   margin: 10px 30px;
+   border-radius: 2rem;
+   padding: 30px;
+   width: 300px;
+   height: auto;
+}

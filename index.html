@@ -6,59 +6,39 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MinhaStack</title>
-   <link rel="stylesheet" href='./style.css'>
+   <link rel="stylesheet" href='./global.css'>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body 
-   style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
->
-  
+<body
+   style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
    <div class="img-container">
-      <img class='logo-ms' src="./images/logoBrancaVazada.png" alt="" srcset="">
+      <img class='logo-ms' src="./images/logoBrancaVazada.png" alt="Minha Stack">
    </div>
-  
-   <h1 class='default-title'>UsageTime</h1>
-   <p>
-      Essa ideia foi desenvolvida baseada em algumas funções nativas do android e ios onde temos acesso ao tempo de uso de cada app, 
-      em conjunto com outra ideia que foi surgindo no nosso grupo do discord, onde nos reunimos semanalmente para estudar uma determinada ternologia.
-   </p>
+
+   <div class="presentation">
+      <h1 class='default-title'>UsageTime</h1>
+      <p>Uma maneira inteligente de direcionar seu tempo para coisas importantes.</p>
+   </div>
+
+
+
    <div class="form-container">
       <form action="#">
 
-         <input type="text" id="app" required="true" placeholder="Nome do app">
+         <input type="text" id="app" required="true" placeholder="Nome do App">
          <input type="number" id="timeUse" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" placeholder="Tempo de uso">
-         <button type="submit">Retornar valor </button>
-
+         <button class="default-button" type="submit">Reduzir uso</button>
+         <br>
+         <br>
+         <a href="./pages/infos/infos.html">Entenda o que é e como usar.</a>
       </form>
    </div>
-   <div class="result">
 
-   </div>
-
-   <div class="infos-container">
-      <div class="infos-item1">
-         <h1>O que é isso?</h1>
-         <p>
-            Esse é o criador de tempo. Faz parte do nosso projeto do grupo do discord que
-            te incentiva a estudar mesmo se "te falta tempo". Para entender um pouco mais
-            pode clicar aqui.
-
-         </p>
-      </div>
-      <div class="infos-item2">
-         <h1>Como Usar?</h1>
-
-         <p>
-            - Digite o nome do app que você quer reduzir o tempo de uso no campo "nome do app"<br>
-            - Digite o numero de tempo de uso desse app (em horas);
-         </p>
-      </div>
-
-   </div>
-
+   <div class="result"></div>
    <footer>
 
    </footer>

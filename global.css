@@ -1,0 +1,138 @@
+:root {
+   --background-color: #090C10;
+   --primary-color: #4B0BD1;
+   --primary-color-light: #5e23df;
+   --secundary-color: #2EA043;
+   --secundary-color-light: #4cbf61;
+   --light-text-color: #fffffffa;
+
+
+}
+
+body {
+   font-family: Open-sans;
+   background: var(--background-color);
+   color: var(--light-text-color);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3 {
+   text-align: center;
+   line-height: 2.5rem;
+   margin: 10px 0;
+   padding: 0 10px;
+
+}
+
+p {
+   text-align: center;
+}
+
+a {
+   color: var(--light-text-color);
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style: decimal-leading-zero;
+   margin: 0 0 10px 10px;
+}
+
+
+.img-container {
+   background: black;
+   height: 90px;
+   border-radius: 0 0 30px 30px;
+}
+
+.logo-ms {
+   display: block;
+   height: 100px;
+   margin: 0 auto;
+
+}
+
+.presentation{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.presentation h1 {
+   margin-bottom: 15px;
+}
+
+.presentation p {
+   width: 80%;
+   text-align: center;
+}
+
+.default-button {
+   display: block;
+   padding: 10px;
+   margin: 0 auto;
+   box-sizing: content-box;
+   border-radius: .2rem;
+   border: none;
+   background: var(--secundary-color);
+   color: var(--light-text-color);
+   font-weight: bold;
+   cursor: pointer;
+
+}
+
+.form-container {
+   margin: 30px 0;
+   padding: 20px;
+
+}
+
+.form-container form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px;
+}
+
+
+.form-container input {
+   width: 80%;
+   height: 35px;
+   margin-bottom: 20px;
+   border: solid .5px #ccc;
+   padding: 1rem;
+
+}
+
+.form-container button {
+   width: 100px;
+   height: 1.2rem;
+
+}
+
+.result {
+   color: var(--light-text-color);
+   text-align: center;
+   width: 50%;
+   margin: 0 auto 20px;
+
+}
+
+footer {
+   background: black;
+   height: 100px;
+   margin: 30px 0 0 0;
+   border-radius: 30px 30px 0 0;
+
+}
