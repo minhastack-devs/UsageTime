@@ -29,9 +29,33 @@
    <div class="form-container">
       <form action="#">
 
-         <input type="text" id="app" required="true" placeholder="Nome do App">
+         <!-- <input type="text" id="app" required="true" placeholder="Nome do App"> -->
+         <select id="apps">
+            <option hidden>Escolha um app</option>
+            <option class="option" value='Facebook'>Facebook</option>
+            <option class="option" value='Instagram'>Instagram</option>
+            <option class="option" value='TikTok'>TikTok</option>
+            <option class="option" value='Kwai'>Kwai</option>
+            <option class="option" value='Twitter'>Twitter</option>
+            <option class="option" value='YouTube'>YouTube</option>
+            <option class="option" value='Reddit'>Reddit</option>
+            <option class="option" value='Twitch'>Twitch</option>
+            <option class="option" value='Discord'>Discord</option>
+            <option class="option" value='Telegram'>Telegram</option>
+            <option class="option" value='Whatsapp'>Whatsapp</option>
+         </select>
+
          <input type="number" id="timeUse" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" placeholder="Tempo de uso">
+
+         <label for="bar">Reduza seu tempo de uso em % </label>
+
+         <input type="text" id="display" value="50%" readonly>
+
+         <input id="bar" type="range" name="vol" value="50" min="50" max="80" step="1"
+            oninput="display.value=value + '%'" onchange="display.value=value + '%'">
+
          <button class="default-button" type="submit">Reduzir uso</button>
+
          <br>
          <br>
          <a href="./pages/infos/infos.html">Entenda o que é e como usar.</a>
@@ -40,7 +64,13 @@
 
    <div class="result"></div>
    <footer>
-
+      <img src="./images/logoms.jpg" alt="" srcset="">
+      <ul>
+         <li><a href="https://minhastack.com">Site</a></li>
+         <li><a href="https://instagram.com/minhastack">Instagram</a></li>
+         
+         <li><a href="">Grupo do Discord</a></li>
+      </ul>
    </footer>
    <script type="text/javascript" src="./index.js"></script>
 </body>

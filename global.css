@@ -63,7 +63,7 @@ li {
 
 }
 
-.presentation{
+.presentation {
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -77,6 +77,7 @@ li {
    width: 80%;
    text-align: center;
 }
+
 
 .default-button {
    display: block;
@@ -106,18 +107,27 @@ li {
 }
 
 
-.form-container input {
+.form-container input,
+.form-container select {
    width: 80%;
    height: 35px;
    margin-bottom: 20px;
    border: solid .5px #ccc;
-   padding: 1rem;
-
 }
 
 .form-container button {
    width: 100px;
    height: 1.2rem;
+
+}
+
+#display {
+   border: none;
+   background: none;
+   color: white;
+   padding: 0;
+   margin: 20px 0 0;
+   text-align: center;
 
 }
 
@@ -130,9 +140,34 @@ li {
 }
 
 footer {
+   display: flex;
+   height: 120px;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: space-evenly;
+   padding: 30px 10px;
    background: black;
-   height: 100px;
-   margin: 30px 0 0 0;
+   margin: 80px 0 0 0;
    border-radius: 30px 30px 0 0;
+}
 
+footer ul {
+   margin: 0;
+   padding: 0;
+   width: 40%;
+   border-left: solid 1px white;
+
+
+}
+
+footer img {
+   width: 4rem;
+   height: 4rem;
+   border-radius: 100%;
+
+}
+
+footer li {
+   list-style: none;
+   margin: 0 0 .2rem .5rem;
 }
